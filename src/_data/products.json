@@ -1,0 +1,39 @@
+[
+  {
+    "slug": "sera",
+    "name": "Sera",
+    "type": "Borsa a mezzaluna",
+    "price": 62,
+    "description": "Cucita a mano in tessuti pregiati: velluti, broccati, sete. Con tracolla sottile.",
+    "variants": [
+      { "id": "sera-kokeshi-blu", "name": "Kokeshi blu notte", "swatch": "#1f2a55", "price": null, "stock": 1, "images": ["/img/products/sera/kokeshi-blu-1.webp"] },
+      { "id": "sera-kokeshi-rosso", "name": "Kokeshi rosso", "swatch": "#b3202f", "price": null, "stock": 1, "images": ["/img/products/sera/kokeshi-rosso-1.webp"] },
+      { "id": "sera-broccato-verde", "name": "Broccato verde salvia", "swatch": "#9db98c", "price": null, "stock": 2, "images": ["/img/products/sera/broccato-verde-1.webp"] },
+      { "id": "sera-velluto-rosa", "name": "Velluto rosa antico", "swatch": "#b57a82", "price": null, "stock": 2, "images": ["/img/products/sera/velluto-rosa-1.webp"] },
+      { "id": "sera-raso-peonie", "name": "Raso peonie", "swatch": "#e3c4b2", "price": null, "stock": 1, "images": ["/img/products/sera/raso-peonie-1.webp"] },
+      { "id": "sera-broccato-antracite", "name": "Broccato antracite e argento", "swatch": "#5a5659", "price": null, "stock": 1, "images": ["/img/products/sera/broccato-antracite-1.webp"] },
+      { "id": "sera-damasco-argento", "name": "Damasco argento", "swatch": "#c9c1b4", "price": null, "stock": 1, "images": ["/img/products/sera/damasco-argento-1.webp"] },
+      { "id": "sera-velluto-petrolio", "name": "Velluto petrolio", "swatch": "#1c6176", "price": null, "stock": 1, "images": ["/img/products/sera/velluto-petrolio-1.webp"] },
+      { "id": "sera-seta-rame", "name": "Seta rame", "swatch": "#8a5a50", "price": null, "stock": 1, "images": ["/img/products/sera/seta-rame-1.webp"] },
+      { "id": "sera-velluto-notte", "name": "Velluto blu notte", "swatch": "#1b1d2e", "price": null, "stock": 2, "images": ["/img/products/sera/velluto-notte-1.webp"] },
+      { "id": "sera-velluto-ardesia", "name": "Velluto blu ardesia", "swatch": "#2b4a5e", "price": null, "stock": 1, "images": ["/img/products/sera/velluto-ardesia-1.webp"] },
+      { "id": "sera-velluto-verde-acqua", "name": "Velluto verde acqua", "swatch": "#1b6f6b", "price": null, "stock": 1, "images": ["/img/products/sera/velluto-verde-acqua-1.webp"] },
+      { "id": "sera-jacquard-rosso", "name": "Jacquard rosso e perla", "swatch": "#b8324b", "price": null, "stock": 1, "images": ["/img/products/sera/jacquard-rosso-1.webp"] }
+    ]
+  },
+  {
+    "slug": "mare",
+    "name": "Mare",
+    "type": "Borsa da mare",
+    "price": 38,
+    "description": "Leggera e capiente, con manici blu. Per spiaggia e giornate fuori.",
+    "variants": [
+      { "id": "mare-stella-marina", "name": "Stella marina e corallo", "swatch": "#8fc7d8", "price": null, "stock": 0, "images": ["/img/products/mare/stella-marina-1.webp"] },
+      { "id": "mare-cactus", "name": "Vasi di cactus", "swatch": "#e8e6ee", "price": null, "stock": 0, "images": ["/img/products/mare/cactus-1.webp"] },
+      { "id": "mare-corallo-dorato", "name": "Corallo dorato su azzurro", "swatch": "#4f8fd0", "price": null, "stock": 0, "images": ["/img/products/mare/corallo-dorato-1.webp"] },
+      { "id": "mare-righe-tortora", "name": "Righe tortora", "swatch": "#b9a794", "price": null, "stock": 0, "images": ["/img/products/mare/righe-tortora-1.webp"] },
+      { "id": "mare-righe-azzurre", "name": "Righe azzurre", "swatch": "#a9c3dc", "price": null, "stock": 0, "images": ["/img/products/mare/righe-azzurre-1.webp"] },
+      { "id": "mare-conchiglie", "name": "Conchiglie su panna", "swatch": "#eadfc4", "price": null, "stock": 0, "images": ["/img/products/mare/conchiglie-1.webp"] }
+    ]
+  }
+]

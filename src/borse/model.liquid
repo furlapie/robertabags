@@ -1,0 +1,31 @@
+---
+layout: base.liquid
+pagination:
+  data: products
+  size: 1
+  alias: model
+permalink: "borse/{{ model.slug }}/index.html"
+eleventyComputed:
+  title: "{{ model.name }}"
+---
+<section class="pdp">
+  <div class="pdp-gallery">
+    <div class="arch pdp-main" id="pdp-main"><img id="pdp-main-img" alt="{{ model.name }}"></div>
+    <div class="pdp-thumbs" id="pdp-thumbs"></div>
+  </div>
+  <div class="pdp-info">
+    <p class="eyebrow">{{ model.type }}</p>
+    <h1>{{ model.name }}</h1>
+    <p class="pdp-price" id="pdp-price">€ {{ model.price }}</p>
+    <p class="lead">{{ model.description }}</p>
+    <p class="label">Tessuto: <strong id="pdp-variant-name"></strong></p>
+    <div class="pdp-swatches" id="pdp-swatches"></div>
+    <p class="stock" id="pdp-stock"></p>
+    <button class="btn" id="pdp-add">Aggiungi alla borsa</button>
+    <p class="note">{{ site.shipping }} · Fatto a mano</p>
+    <a class="back" href="/#collezione">← Torna alla collezione</a>
+  </div>
+</section>
+
+<script>window.MODEL = {{ model | json }};</script>
+<script src="/js/product.js" defer></script>

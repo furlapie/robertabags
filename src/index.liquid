@@ -1,0 +1,69 @@
+---
+layout: base.liquid
+---
+<section class="hero">
+  <div class="hero-text reveal">
+    <p class="eyebrow">Fatto a mano · Milano</p>
+    <h1>Ogni borsa,<br>un tessuto <em>diverso</em>.</h1>
+    <p class="lead">Pochi modelli, scelti con cura, cuciti con stoffe che trovi solo qui. Da portare al mare, in viaggio, o la sera.</p>
+    <a class="btn btn-ghost" href="#collezione">Scopri la collezione</a>
+  </div>
+  <div class="hero-art reveal">
+    <div class="hero-blob"></div>
+    <div class="arch hero-arch" style="background-image:url('{{ site.hero }}')"></div>
+    <div class="badge" aria-hidden="true"><span>pezzi limitati · fatto a mano ·</span></div>
+  </div>
+</section>
+
+<div class="ribbons" aria-hidden="true">
+  <div class="ribbon ribbon-pink"><div class="ribbon-track">
+    {% for i in (1..2) %}<span>Fatto a mano ✦ Pezzi limitati ✦ Tessuti scelti uno a uno ✦ Fatto a mano ✦ Pezzi limitati ✦ Tessuti scelti uno a uno ✦ </span>{% endfor %}
+  </div></div>
+  <div class="ribbon ribbon-glass"><div class="ribbon-track reverse">
+    {% for i in (1..2) %}<span>Velluto ✦ Seta ✦ Broccato ✦ Cotone ✦ Velluto ✦ Seta ✦ Broccato ✦ Cotone ✦ Velluto ✦ Seta ✦ </span>{% endfor %}
+  </div></div>
+</div>
+
+<section id="collezione" class="section">
+  <h2 class="section-title reveal">La collezione</h2>
+  <div class="grid">
+    {% for model in products %}
+      {% assign available = false %}
+      {% for v in model.variants %}{% if v.stock > 0 %}{% assign available = true %}{% endif %}{% endfor %}
+      {% assign first = model.variants[0] %}
+      <a class="card reveal" href="/borse/{{ model.slug }}/">
+        <div class="arch card-img" style="background:{{ first.swatch }}">
+          <img src="{{ first.images[0] }}" alt="{{ model.name }} {{ first.name }}" loading="lazy" onerror="this.style.display='none'">
+          {% unless available %}<span class="tag">Esaurita</span>{% endunless %}
+        </div>
+        <p class="card-type">{{ model.type }}</p>
+        <h3>{{ model.name }}</h3>
+        <p class="card-price">da € {{ model.price }}</p>
+        <div class="swatches">
+          {% for v in model.variants %}
+            <span class="dot" title="{{ v.name }}" data-img="{{ v.images[0] }}" data-color="{{ v.swatch }}" style="background:{{ v.swatch }}"></span>
+          {% endfor %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="tessuti" class="section fabrics">
+  <h2 class="section-title reveal">I tessuti</h2>
+  <p class="section-sub reveal">Ogni modello nasce in più stoffe. Quando finiscono, finiscono.</p>
+  <div class="fabric-row">
+    {% for model in products %}{% for v in model.variants %}
+      <a class="fabric reveal" href="/borse/{{ model.slug }}/">
+        <span class="fabric-dot" style="background:{{ v.swatch }}"></span>
+        <span>{{ v.name }}</span>
+      </a>
+    {% endfor %}{% endfor %}
+  </div>
+</section>
+
+<section id="storia" class="section story reveal">
+  <p class="eyebrow">La storia</p>
+  <h2>Cucite una alla volta,<br>con <em>dedizione</em>.</h2>
+  <p>Tutto comincia con la stoffa: la scelgo a metri, la taglio e la cucio a mano. Per questo non troverai mai due borse esattamente uguali.</p>
+</section>
