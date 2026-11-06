@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     main.style.background = v.swatch;
     img.style.display = ''; img.src = v.images[state.i] || ''; img.onerror = function () { img.style.display = 'none'; };
     document.getElementById('pdp-variant-name').textContent = v.name;
+    document.getElementById('pdp-fabric').textContent = v.fabric || '';
     document.getElementById('pdp-price').textContent = '€ ' + price(v);
     document.getElementById('pdp-stock').textContent = v.stock <= 0 ? 'Esaurita' : v.stock <= 2 ? 'Ultimi ' + v.stock + ' pezzi' : 'Disponibile';
     add.disabled = v.stock <= 0;

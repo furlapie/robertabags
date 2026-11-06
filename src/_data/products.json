@@ -4,21 +4,48 @@
     "name": "Sera",
     "type": "Borsa a mezzaluna",
     "price": 62,
-    "description": "Cucita a mano in tessuti pregiati: velluti, broccati, sete. Con tracolla sottile.",
+    "description": "La borsa per le serate in cui vuoi qualcosa che nessun altro ha. Una forma morbida a mezzaluna, cucita a mano in tessuti scelti uno a uno: velluti profondi, broccati ricchi, sete lucenti. Pochi pezzi per ogni tessuto.",
+    "highlights": [
+      "Cucita a mano, un pezzo alla volta",
+      "Tessuti pregiati: velluto, broccato, seta, raso",
+      "Tracolla sottile per portarla leggera",
+      "Pochi pezzi per tessuto, mai una produzione di serie"
+    ],
+    "details": {
+      "dimensioni": null,
+      "chiusura": null,
+      "tracolla": "Sottile, lunghezza da confermare",
+      "fodera": null,
+      "cura": null,
+      "origine": "Fatto a mano a Milano"
+    },
     "variants": [
-      { "id": "sera-kokeshi-blu", "name": "Kokeshi blu notte", "swatch": "#1f2a55", "price": null, "stock": 1, "images": ["/img/products/sera/kokeshi-blu-1.webp"] },
-      { "id": "sera-kokeshi-rosso", "name": "Kokeshi rosso", "swatch": "#b3202f", "price": null, "stock": 1, "images": ["/img/products/sera/kokeshi-rosso-1.webp"] },
-      { "id": "sera-broccato-verde", "name": "Broccato verde salvia", "swatch": "#9db98c", "price": null, "stock": 2, "images": ["/img/products/sera/broccato-verde-1.webp"] },
-      { "id": "sera-velluto-rosa", "name": "Velluto rosa antico", "swatch": "#b57a82", "price": null, "stock": 2, "images": ["/img/products/sera/velluto-rosa-1.webp"] },
-      { "id": "sera-raso-peonie", "name": "Raso peonie", "swatch": "#e3c4b2", "price": null, "stock": 1, "images": ["/img/products/sera/raso-peonie-1.webp"] },
-      { "id": "sera-broccato-antracite", "name": "Broccato antracite e argento", "swatch": "#5a5659", "price": null, "stock": 1, "images": ["/img/products/sera/broccato-antracite-1.webp"] },
-      { "id": "sera-damasco-argento", "name": "Damasco argento", "swatch": "#c9c1b4", "price": null, "stock": 1, "images": ["/img/products/sera/damasco-argento-1.webp"] },
-      { "id": "sera-velluto-petrolio", "name": "Velluto petrolio", "swatch": "#1c6176", "price": null, "stock": 1, "images": ["/img/products/sera/velluto-petrolio-1.webp"] },
-      { "id": "sera-seta-rame", "name": "Seta rame", "swatch": "#8a5a50", "price": null, "stock": 1, "images": ["/img/products/sera/seta-rame-1.webp"] },
-      { "id": "sera-velluto-notte", "name": "Velluto blu notte", "swatch": "#1b1d2e", "price": null, "stock": 2, "images": ["/img/products/sera/velluto-notte-1.webp"] },
-      { "id": "sera-velluto-ardesia", "name": "Velluto blu ardesia", "swatch": "#2b4a5e", "price": null, "stock": 1, "images": ["/img/products/sera/velluto-ardesia-1.webp"] },
-      { "id": "sera-velluto-verde-acqua", "name": "Velluto verde acqua", "swatch": "#1b6f6b", "price": null, "stock": 1, "images": ["/img/products/sera/velluto-verde-acqua-1.webp"] },
-      { "id": "sera-jacquard-rosso", "name": "Jacquard rosso e perla", "swatch": "#b8324b", "price": null, "stock": 1, "images": ["/img/products/sera/jacquard-rosso-1.webp"] }
+      { "id": "sera-kokeshi-blu", "name": "Kokeshi blu notte", "fabric": "Cotone stampato", "swatch": "#1f2a55", "price": null, "stock": 1,
+        "images": ["/img/products/sera/kokeshi-blu-1.webp"] },
+      { "id": "sera-kokeshi-rosso", "name": "Kokeshi rosso", "fabric": "Cotone stampato", "swatch": "#b3202f", "price": null, "stock": 1,
+        "images": ["/img/products/sera/kokeshi-rosso-1.webp"] },
+      { "id": "sera-broccato-verde", "name": "Broccato verde salvia", "fabric": "Broccato", "swatch": "#9db98c", "price": null, "stock": 2,
+        "images": ["/img/products/sera/broccato-verde-1.webp"] },
+      { "id": "sera-velluto-rosa", "name": "Velluto rosa antico", "fabric": "Velluto", "swatch": "#b57a82", "price": null, "stock": 2,
+        "images": ["/img/products/sera/velluto-rosa-1.webp"] },
+      { "id": "sera-raso-peonie", "name": "Raso peonie", "fabric": "Raso ricamato", "swatch": "#e3c4b2", "price": null, "stock": 1,
+        "images": ["/img/products/sera/raso-peonie-1.webp"] },
+      { "id": "sera-broccato-antracite", "name": "Broccato antracite e argento", "fabric": "Broccato", "swatch": "#5a5659", "price": null, "stock": 1,
+        "images": ["/img/products/sera/broccato-antracite-1.webp"] },
+      { "id": "sera-damasco-argento", "name": "Damasco argento", "fabric": "Damasco", "swatch": "#c9c1b4", "price": null, "stock": 1,
+        "images": ["/img/products/sera/damasco-argento-1.webp"] },
+      { "id": "sera-velluto-petrolio", "name": "Velluto petrolio", "fabric": "Velluto", "swatch": "#1c6176", "price": null, "stock": 1,
+        "images": ["/img/products/sera/velluto-petrolio-1.webp"] },
+      { "id": "sera-seta-rame", "name": "Seta rame", "fabric": "Seta", "swatch": "#8a5a50", "price": null, "stock": 1,
+        "images": ["/img/products/sera/seta-rame-1.webp"] },
+      { "id": "sera-velluto-notte", "name": "Velluto blu notte", "fabric": "Velluto", "swatch": "#1b1d2e", "price": null, "stock": 2,
+        "images": ["/img/products/sera/velluto-notte-1.webp"] },
+      { "id": "sera-velluto-ardesia", "name": "Velluto blu ardesia", "fabric": "Velluto", "swatch": "#2b4a5e", "price": null, "stock": 1,
+        "images": ["/img/products/sera/velluto-ardesia-1.webp"] },
+      { "id": "sera-velluto-verde-acqua", "name": "Velluto verde acqua", "fabric": "Velluto", "swatch": "#1b6f6b", "price": null, "stock": 1,
+        "images": ["/img/products/sera/velluto-verde-acqua-1.webp"] },
+      { "id": "sera-jacquard-rosso", "name": "Jacquard rosso e perla", "fabric": "Jacquard", "swatch": "#b8324b", "price": null, "stock": 1,
+        "images": ["/img/products/sera/jacquard-rosso-1.webp"] }
     ]
   },
   {
@@ -26,14 +53,34 @@
     "name": "Mare",
     "type": "Borsa da mare",
     "price": 38,
-    "description": "Leggera e capiente, con manici blu. Per spiaggia e giornate fuori.",
+    "description": "Leggera, capiente e con i manici blu che la rendono inconfondibile. La borsa per la spiaggia, per il pranzo fuori o per le piccole cose di ogni giorno: stampe marine, righe e coralli, un tessuto diverso per ogni giornata.",
+    "highlights": [
+      "Leggerissima, ideale per il mare",
+      "Manici blu in contrasto",
+      "Stampe marine, righe e coralli",
+      "Cucita a mano, tessuti scelti uno a uno"
+    ],
+    "details": {
+      "dimensioni": null,
+      "chiusura": "Aperta",
+      "manici": "Doppio manico blu",
+      "fodera": null,
+      "cura": null,
+      "origine": "Fatto a mano a Milano"
+    },
     "variants": [
-      { "id": "mare-stella-marina", "name": "Stella marina e corallo", "swatch": "#8fc7d8", "price": null, "stock": 0, "images": ["/img/products/mare/stella-marina-1.webp"] },
-      { "id": "mare-cactus", "name": "Vasi di cactus", "swatch": "#e8e6ee", "price": null, "stock": 0, "images": ["/img/products/mare/cactus-1.webp"] },
-      { "id": "mare-corallo-dorato", "name": "Corallo dorato su azzurro", "swatch": "#4f8fd0", "price": null, "stock": 0, "images": ["/img/products/mare/corallo-dorato-1.webp"] },
-      { "id": "mare-righe-tortora", "name": "Righe tortora", "swatch": "#b9a794", "price": null, "stock": 0, "images": ["/img/products/mare/righe-tortora-1.webp"] },
-      { "id": "mare-righe-azzurre", "name": "Righe azzurre", "swatch": "#a9c3dc", "price": null, "stock": 0, "images": ["/img/products/mare/righe-azzurre-1.webp"] },
-      { "id": "mare-conchiglie", "name": "Conchiglie su panna", "swatch": "#eadfc4", "price": null, "stock": 0, "images": ["/img/products/mare/conchiglie-1.webp"] }
+      { "id": "mare-stella-marina", "name": "Stella marina e corallo", "fabric": "Cotone stampato", "swatch": "#8fc7d8", "price": null, "stock": 0,
+        "images": ["/img/products/bags_mare/star/_star.webp"] },
+      { "id": "mare-cactus", "name": "Vasi di cactus", "fabric": "Cotone stampato", "swatch": "#e8e6ee", "price": null, "stock": 0,
+        "images": ["/img/products/bags_mare/vase/_vase.webp"] },
+      { "id": "mare-corallo-dorato", "name": "Corallo dorato su azzurro", "fabric": "Cotone stampato", "swatch": "#4f8fd0", "price": null, "stock": 0,
+        "images": ["/img/products/bags_mare/gold/_gold.webp"] },
+      { "id": "mare-righe-tortora", "name": "Righe tortora", "fabric": "Tela a righe", "swatch": "#b9a794", "price": null, "stock": 0,
+        "images": ["/img/products/bags_mare/beige/_beige.webp"] },
+      { "id": "mare-righe-azzurre", "name": "Righe azzurre", "fabric": "Tela a righe", "swatch": "#a9c3dc", "price": null, "stock": 0,
+        "images": ["/img/products/bags_mare/bluestripe/_bluestripe.webp"] },
+      { "id": "mare-conchiglie", "name": "Conchiglie su panna", "fabric": "Cotone stampato", "swatch": "#eadfc4", "price": null, "stock": 0,
+        "images": ["/img/products/bags_mare/conch/_conch.webp"] }
     ]
   }
 ]

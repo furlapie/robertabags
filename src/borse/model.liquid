@@ -18,11 +18,16 @@ eleventyComputed:
     <h1>{{ model.name }}</h1>
     <p class="pdp-price" id="pdp-price">€ {{ model.price }}</p>
     <p class="lead">{{ model.description }}</p>
+    <ul class="highlights">{% for h in model.highlights %}<li>{{ h }}</li>{% endfor %}</ul>
+    <p class="fabric-line" id="pdp-fabric"></p>
     <p class="label">Tessuto: <strong id="pdp-variant-name"></strong></p>
     <div class="pdp-swatches" id="pdp-swatches"></div>
     <p class="stock" id="pdp-stock"></p>
     <button class="btn" id="pdp-add">Aggiungi alla borsa</button>
     <p class="note">{{ site.shipping }} · Fatto a mano</p>
+    <dl class="details">
+      {% for d in model.details %}{% if d[1] %}<dt>{{ d[0] | capitalize }}</dt><dd>{{ d[1] }}</dd>{% endif %}{% endfor %}
+    </dl>
     <a class="back" href="/#collezione">← Torna alla collezione</a>
   </div>
 </section>
