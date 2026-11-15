@@ -12,16 +12,40 @@
   <script src="/js/main.js" defer></script>
 </head>
 <body>
-    <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
-    <div class="bg" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
-    <div class="grain" aria-hidden="true"></div>
-    {% include "header.liquid" %}
-    <main>{{ content }}</main>
-    <footer class="footer">
+  <div class="bg-wrap" aria-hidden="true">
+    <div class="bg"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="pill-group">
+      <a class="pill brand" href="/">{{ site.name }}</a>
+      <button class="pill bag-btn" id="bag-btn" aria-label="Apri la borsa"><span id="cart-count">0</span><span class="plus">+</span></button>
+    </div>
+    <nav class="pill nav-pill">
+      <a href="/#collezione">Collezione</a><a href="/#tessuti">Tessuti</a><a href="/#storia">Storia</a>
+    </nav>
+  </header>
+
+  <main>{{ content }}</main>
+
+  <footer class="footer">
     <p class="footer-brand">{{ site.name }}</p>
     <p>Fatto a mano a Milano · {{ site.shipping }}</p>
     <p class="footer-small">© {{ "now" | date: "%Y" }} {{ site.name }}</p>
-    </footer>
-    {% include "cart.liquid" %}
+  </footer>
+
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-overlay" data-close></div>
+    <aside class="drawer-panel" role="dialog" aria-label="Borsa">
+      <div class="drawer-head"><h2>La tua borsa</h2><button class="drawer-close" data-close aria-label="Chiudi">✕</button></div>
+      <div class="drawer-body" id="drawer-body"></div>
+      <div class="drawer-foot">
+        <div class="drawer-total"><span>Subtotale</span><strong id="drawer-total">€ 0</strong></div>
+        <p class="drawer-note">{{ site.shipping }}, calcolata al pagamento.</p>
+        <button class="btn" id="checkout-btn">Vai al pagamento</button>
+      </div>
+    </aside>
+  </div>
 </body>
 </html>

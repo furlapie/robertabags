@@ -10,7 +10,7 @@ eleventyComputed:
 ---
 <section class="pdp">
   <div class="pdp-gallery">
-    <div class="arch pdp-main" id="pdp-main"><img id="pdp-main-img" alt="{{ model.name }}"></div>
+    <div class="pdp-main" id="pdp-main"><img id="pdp-main-img" alt="{{ model.name }}"></div>
     <div class="pdp-thumbs" id="pdp-thumbs"></div>
   </div>
   <div class="pdp-info">
@@ -33,4 +33,3 @@ eleventyComputed:
 </section>
 
 <script>window.MODEL = {{ model | json }};</script>
-<script src="/js/product.js" defer></script>
