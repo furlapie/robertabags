@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
   <script src="/js/main.js" defer></script>
 </head>
 <body>
@@ -34,7 +35,10 @@
 
   <header class="header">
     <div class="pill-group">
-      <button class="pill bag-btn" id="bag-btn" aria-label="Apri la borsa"><span id="cart-count">0</span><span class="plus">+</span></button>
+      <button class="pill bag-btn" id="bag-btn" aria-label="Apri la borsa">
+        <span class="plus">+</span>
+        <span id="cart-count">0</span>
+      </button>
     </div>
   </header>
 
@@ -42,7 +46,7 @@
 
   <footer class="footer">
     <p class="footer-brand"><img class="footer-logo" src="/img/logo.svg" alt="{{ site.name }}"></p>
-    <p class="footer-small">Fatto a mano a Milano · © {{ "now" | date: "%Y" }}</p>
+    <p class="footer-small">© {{ "now" | date: "%Y" }}</p>
   </footer>
 
   <div class="drawer" id="drawer" aria-hidden="true">
